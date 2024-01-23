@@ -1,6 +1,4 @@
-# Project Title
-
-Habitrack
+# Habitrack
 
 ## Overview
 
@@ -30,6 +28,7 @@ Considerations include: fitness goals and time available to train.
 ### Tech Stack
 
 - React
+- Express
 - MySQL
 
 ### APIs
@@ -38,11 +37,11 @@ YouTube API for video demonstrations on how to complete exercises.
 
 ### Sitemap
 
-Home page
-Register
-Login
-Personal dashboard
-Workout session
+- Home page
+- Register
+- Login
+- Personal dashboard
+- Workout session
 
 ### Mockups
 
@@ -73,23 +72,21 @@ Meal tracker
 
 ### Endpoints
 
-List endpoints that your server will implement, including HTTP methods, parameters, and example responses.
-
-/ = home
-/login = login page
-/signup = signup page
-/userid = dashboard
-/userid/workouts = new workout page
-/userid/workouts/compoundmovements = compound movement list
-/userid/workouts/accessorymovements = accessory movement list
-/userid/mealplans = new plan page
-/userid/mealplans/afrocaribfood = Afro-Caribbean food
-/userid/mealplans/westernfood = Western food
-/userid/tracker = progress tracker
+- / = home
+- /login = login page
+- /signup = signup page
+- /userid = dashboard
+- /userid/workouts = new workout page
+- /userid/workouts/compoundmovements = compound movement list
+- /userid/workouts/accessorymovements = accessory movement list
+- /userid/mealplans = new plan page
+- /userid/mealplans/afrocaribfood = Afro-Caribbean food
+- /userid/mealplans/westernfood = Western food
+- /userid/tracker = progress tracker
 
 ### Auth
 
-No authorisation.
+No authorisation as this will be based on a single user.
 
 ## Roadmap
 
@@ -97,8 +94,7 @@ Scope your project as a sprint. Break down the tasks that will need to be comple
 
 ## Nice-to-haves
 
-Your project will be marked based on what you committed to in the above document. Under nice-to-haves, you can list any additional features you may complete if you have extra time, or after finishing.
-
-Challenges
-Streaks
-Community
+- Login functionality
+- Challenges
+- Streaks
+- Community
