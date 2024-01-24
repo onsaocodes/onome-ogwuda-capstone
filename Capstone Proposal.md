@@ -90,7 +90,35 @@ No authorisation as this will be based on a single user.
 
 ## Roadmap
 
-Scope your project as a sprint. Break down the tasks that will need to be completed and map out timeframes for implementation. Think about what you can reasonably complete before the due date. The more detail you provide, the easier it will be to build.
+#### Wednesday 24th Jan
+
+- Set up project on Github
+- Create logo
+- Create landing page
+
+#### Thurs 25th Jan - Fri 26th Jan
+
+- Login/sign up page front end and back end
+
+#### Sat 27th Jan - Sun 28th Jan
+
+- New user dashboard front end and back end
+
+#### Mon 29th Jan - Tues 30th Jan
+
+- 'Create workout' page front end and back end
+
+#### Wed 31st Jan - Thurs 1st Feb
+
+- Start workout page
+
+#### Fri 2nd Jan - Sat 3rd Feb
+
+- Tracker page
+
+#### Sun 4th Feb
+
+- Fix bugs and submit
 
 ## Nice-to-haves
 
