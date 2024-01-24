@@ -1,0 +1,54 @@
+@use "../../styles/reset";
+@use "../../styles/mixins" as *;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+
+  @include tablet {
+    padding: 4rem 4rem;
+  }
+
+  @include desktop {
+    padding: 6rem 8rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    &-text {
+      padding-top: 0.5rem;
+    }
+  }
+
+  &__button {
+    padding: 0 2rem;
+    border-radius: 0.25rem;
+    background-color: purple;
+    color: white;
+
+    @include tablet {
+      padding: 0 4rem;
+      font-size: 1.5rem;
+    }
+
+    @include desktop {
+      padding: 0.5rem 8rem;
+      font-size: 2rem;
+    }
+  }
+
+  &__button:hover {
+    background-color: white;
+    color: purple;
+  }
+}
