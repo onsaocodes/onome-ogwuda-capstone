@@ -1,7 +1,9 @@
 @use "../../styles/reset";
 @use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
 
 .nav {
+  background-color: $primary-background-colour;
   display: flex;
   justify-content: space-between;
   padding: 2rem;
@@ -25,6 +27,8 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    color: $primary-text-colour;
+
     &-text {
       padding-top: 0.5rem;
     }
@@ -34,7 +38,7 @@
     padding: 0 2rem;
     border-radius: 0.25rem;
     background-color: purple;
-    color: white;
+    color: $primary-text-colour;
 
     @include tablet {
       padding: 0 4rem;
@@ -48,7 +52,7 @@
   }
 
   &__button:hover {
-    background-color: white;
+    background-color: $primary-text-colour;
     color: purple;
   }
 }
