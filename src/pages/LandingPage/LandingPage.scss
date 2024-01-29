@@ -80,4 +80,9 @@
       text-transform: capitalize;
     }
   }
+
+  &__sign-up:hover {
+    background-color: $primary-text-colour;
+    color: purple;
+  }
 }
