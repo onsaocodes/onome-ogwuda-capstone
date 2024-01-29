@@ -6,14 +6,17 @@ const LandingPage = () => {
     <>
       <div className="hero">
         <div className="hero__container">
-          {/* <h1 className="hero__title">Welcome</h1> */}
+          <div className="hero__heading">
+            <h1 className="hero__title">Fitness made easy</h1>
+            <p className="hero__text">Start your fitness journey today.</p>
+            <button className="hero__sign-up">Get started</button>
+          </div>
           <img
             src={hero_img}
-            alt="women lunging with a barbell"
+            alt="woman lunging with a barbell"
             className="hero__image"
           />
         </div>
-        <button className="hero__sign-up">Start Training</button>
       </div>
     </>
   );
