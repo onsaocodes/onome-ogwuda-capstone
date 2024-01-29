@@ -1,13 +1,40 @@
+@use "../../styles/reset";
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
 .registration {
   //   display: flex;
+  padding: 0.5rem 2rem;
+
+  @include tablet {
+    padding: 0 4rem;
+  }
+
+  @include desktop {
+    padding: 3rem 8rem;
+  }
+
+  &__title {
+    padding: 1rem 0;
+  }
 
   &__form {
     display: flex;
     flex-direction: column;
+    width: 10%;
+
+    &-label {
+      padding-bottom: 0.2rem;
+    }
+
+    &-input {
+      padding-bottom: 0.2rem;
+    }
+
     &-btns {
       display: flex;
-      //   justify-content: space-between;
       padding-top: 2rem;
+      gap: 2rem;
     }
     &-btn {
       text-decoration: none;
