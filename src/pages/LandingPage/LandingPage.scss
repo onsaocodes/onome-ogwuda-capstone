@@ -3,8 +3,18 @@
 @use "../../styles/variables" as *;
 
 .hero {
+  background-color: $primary-background-colour;
   display: flex;
   flex-direction: column;
+  padding: 0.5rem 2rem;
+
+  @include tablet {
+    padding: 0 4rem;
+  }
+
+  @include desktop {
+    padding: 0 8rem;
+  }
 
   &__container {
     display: flex;

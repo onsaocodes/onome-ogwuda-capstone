@@ -1,5 +1,6 @@
 import "./LandingPage.scss";
 import hero_img from "../../assests/images/hero_image.png";
+import Features from "../../components/Features/Features";
 
 const LandingPage = () => {
   return (
@@ -18,6 +19,7 @@ const LandingPage = () => {
           />
         </div>
       </div>
+      <Features />
     </>
   );
 };
