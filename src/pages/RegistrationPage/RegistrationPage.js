@@ -1,6 +1,4 @@
 import "./RegistrationPage.scss";
-import hero_img from "../../assests/images/hero_image.png";
-import Features from "../../components/Features/Features";
 import { Link } from "react-router-dom";
 
 const RegistrationPage = () => {

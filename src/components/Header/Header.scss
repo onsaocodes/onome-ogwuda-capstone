@@ -39,6 +39,7 @@
     border-radius: 0.25rem;
     background-color: purple;
     color: $primary-text-colour;
+    text-decoration: none;
 
     @include tablet {
       padding: 0 4rem;
@@ -46,7 +47,7 @@
     }
 
     @include desktop {
-      padding: 0.5rem 8rem;
+      padding: 1rem 8rem;
       font-size: 2rem;
     }
   }
