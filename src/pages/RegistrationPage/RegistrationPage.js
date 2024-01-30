@@ -10,7 +10,11 @@ const RegistrationPage = () => {
           <label htmlFor="first-name" className="registration__form-label">
             First Name
           </label>
-          <input type="text" id="first-name" />
+          <input
+            type="text"
+            id="first-name"
+            className="registration__form-input"
+          />
           <label htmlFor="last-name" className="registration__form-label">
             Last Name
           </label>
