@@ -43,7 +43,7 @@ const RegistrationPage = () => {
             <Link to="/login" className="registration__form-btn">
               Login
             </Link>
-            <Link to="/signup/biometrics" className="registration__form-btn">
+            <Link to="/biometrics" className="registration__form-btn">
               Next
             </Link>
           </div>

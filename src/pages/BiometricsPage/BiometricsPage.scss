@@ -2,7 +2,7 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
 
-.registration {
+.biometrics {
   padding: 6rem 2rem;
   display: flex;
   justify-content: center;
@@ -30,8 +30,45 @@
     width: 30%;
     font-size: 1.6rem;
 
+    &-weight,
+    &-desired,
+    &-height,
+    &-goals,
+    &-dob {
+      display: flex;
+      gap: 1rem;
+      align-content: center;
+      padding-bottom: 0.2rem;
+    }
+
+    &-question {
+      padding-bottom: 0.8rem;
+    }
+
+    &-availability,
+    &-levels {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 0.7rem;
+    }
+
+    &-goal {
+      padding: 0.5rem 1rem;
+      margin-bottom: 1rem;
+    }
+
+    &-option,
+    &-level {
+      padding-left: 1rem;
+      font-weight: 100;
+    }
+
     &-label {
       padding: 0.4rem 0;
+
+      &--capitalise {
+        text-transform: capitalize;
+      }
     }
 
     &-input {
