@@ -2,6 +2,7 @@ import "./UserDashboardPage.scss";
 import { Link, useParams } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import UserFeatures from "../../components/UserFeatures/UserFeatures";
 
 const UserDashboardPage = () => {
   const [user, setUser] = useState(null);
@@ -10,7 +11,6 @@ const UserDashboardPage = () => {
   const URL = process.env.REACT_APP_URL;
   const PORT = process.env.REACT_APP_PORT;
 
-  console.log(`${URL}${PORT}/users/${id}`);
   const getUser = async () => {
     try {
       const response = await axios.get(`${URL}${PORT}/users/${id}`);
@@ -24,8 +24,6 @@ const UserDashboardPage = () => {
     getUser();
   }, []);
 
-  console.log(user);
-
   if (!user) {
     return <section className="user-absent">User not found...</section>;
   }
@@ -36,6 +34,7 @@ const UserDashboardPage = () => {
         <div className="user__title-container">
           <h2 className="user__title">Welcome {user.first_name}</h2>
         </div>
+        <UserFeatures />
       </div>
     </>
   );

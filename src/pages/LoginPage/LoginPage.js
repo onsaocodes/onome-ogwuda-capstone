@@ -1,7 +1,9 @@
 import "./LoginPage.scss";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const LoginPage = () => {
+  const id = 1;
+
   return (
     <>
       <div className="login">
@@ -26,7 +28,7 @@ const LoginPage = () => {
             <Link to="/signup" className="login__form-btn">
               Sign Up
             </Link>
-            <Link to="/dashboard" className="login__form-btn">
+            <Link to={`/users/${id}`} className="login__form-btn">
               Login
             </Link>
           </div>
