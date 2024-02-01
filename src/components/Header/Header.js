@@ -13,7 +13,7 @@ const Header = () => {
           </div>
         </Link>
         <Link to="/login" className="nav__button">
-          Login
+          Members Area
         </Link>
       </nav>
     </header>

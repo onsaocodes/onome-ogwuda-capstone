@@ -15,9 +15,7 @@ const BiometricsPage = () => {
               Fasted weight
             </label>
             <input type="text" id="weight" className="biometrics__form-input" />
-            <label htmlFor="weight" className="biometrics__form-label">
-              kg
-            </label>
+            <p className="biometrics__form-metric">kg</p>
           </div>
           <div className="biometrics__form-desired">
             <label
@@ -28,13 +26,10 @@ const BiometricsPage = () => {
             </label>
             <input
               type="text"
-              id="desired-weight"
+              id="desired-weight-metrics"
               className="biometrics__form-input"
             />
-            <label
-              htmlFor="weight"
-              className="biometrics__form-label biometrics__form-label--capitalise"
-            >
+            <label hp className="biometrics__form-metric">
               kg
             </label>
           </div>
@@ -46,9 +41,7 @@ const BiometricsPage = () => {
               Height
             </label>
             <input type="text" id="height" className="biometrics__form-input" />
-            <label htmlFor="height" className="biometrics__form-label">
-              cm
-            </label>
+            <p className="biometrics__form-metric">cm</p>
           </div>
           <div className="biometrics__form-goals">
             <label
@@ -85,7 +78,7 @@ const BiometricsPage = () => {
                 className="biometrics__form-number"
               />
               <label
-                htmlFor="days"
+                htmlFor="days-2"
                 className="biometrics__form-label biometrics__form-label--capitalise"
               >
                 2
@@ -95,26 +88,26 @@ const BiometricsPage = () => {
               <input
                 type="radio"
                 name="days"
-                id="days-2"
+                id="days-3"
                 className="biometrics__form-number"
                 defaultChecked
               />
-              <label htmlFor="days">3 (Recommended) </label>
+              <label htmlFor="days-3">3 (Recommended) </label>
             </div>
             <div className="biometrics__form-option">
               <input
                 type="radio"
                 name="days"
-                id="days-2"
+                id="days-4"
                 className="biometrics__form-number"
               />
-              <label htmlFor="days">4</label>
+              <label htmlFor="days-4">4</label>
             </div>
             <div className="biometrics__form-option">
               <input
                 type="radio"
                 name="days"
-                id="days-2"
+                id="days-5"
                 className="biometrics__form-number"
               />
               <label htmlFor="days">5</label>
@@ -128,19 +121,19 @@ const BiometricsPage = () => {
               <input
                 type="radio"
                 name="days"
-                id="days-2"
+                id="beginner"
                 className="biometrics__form-level"
               />
-              <label htmlFor="days">Beginner - new to training</label>
+              <label htmlFor="beginner">Beginner - new to training</label>
             </div>
             <div className="biometrics__form-level">
               <input
                 type="radio"
                 name="days"
-                id="days-2"
+                id="intermediate"
                 className="biometrics__form-level"
               />
-              <label htmlFor="days">
+              <label htmlFor="intermediate">
                 Intermediate - have been training for more than 3 months
               </label>
             </div>
