@@ -5,6 +5,7 @@ import "./App.scss";
 import RegistrationPage from "./pages/RegistrationPage/RegistrationPage";
 import BiometricsPage from "./pages/BiometricsPage/BiometricsPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
+import UserDashboardPage from "./pages/UserDashboardPage/UserDashboardPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/signup" element={<RegistrationPage />} />
             <Route path="/biometrics" element={<BiometricsPage />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/users/:id" element={<UserDashboardPage />} />
           </Routes>
         </main>
       </BrowserRouter>

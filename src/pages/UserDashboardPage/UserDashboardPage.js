@@ -10,8 +10,7 @@ const UserDashboardPage = () => {
   const URL = process.env.REACT_APP_URL;
   const PORT = process.env.REACT_APP_PORT;
 
-  console.log(`${URL}${PORT}/${id}`);
-
+  console.log(`${URL}${PORT}/users/${id}`);
   const getUser = async () => {
     try {
       const response = await axios.get(`${URL}${PORT}/users/${id}`);
@@ -24,6 +23,8 @@ const UserDashboardPage = () => {
   useEffect(() => {
     getUser();
   }, []);
+
+  console.log(user);
 
   if (!user) {
     return <section className="user-absent">User not found...</section>;
