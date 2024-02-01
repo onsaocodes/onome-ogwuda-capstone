@@ -1,0 +1,62 @@
+@use "../../styles/reset";
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.login {
+  padding: 6rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem;
+
+  @include tablet {
+    // padding: 0 4rem;
+  }
+
+  @include desktop {
+    // padding-top: 6rem 8rem;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-size: 1.6rem;
+
+    &-label {
+      padding: 0.4rem 0;
+    }
+
+    &-input {
+      width: 100%;
+      padding: 1rem 0;
+      margin-bottom: 0.5rem;
+    }
+
+    &-btns {
+      display: flex;
+      padding-top: 1rem;
+      gap: 2rem;
+      justify-content: right;
+    }
+    &-btn {
+      text-decoration: none;
+      color: black;
+    }
+    &-btn:hover {
+      border-bottom: 2px solid purple;
+    }
+
+    &-remember {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}
