@@ -1,5 +1,5 @@
 import "./LoginPage.scss";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const LoginPage = () => {
   const id = 1;
@@ -12,7 +12,7 @@ const LoginPage = () => {
           <label htmlFor="email" className="login__form-label">
             Email Address
           </label>
-          <input type="email" id="email" className="login__form-input" />
+          <input type="password" id="password" className="login__form-input" />
           <label htmlFor="password" className="login__form-label">
             Password
           </label>

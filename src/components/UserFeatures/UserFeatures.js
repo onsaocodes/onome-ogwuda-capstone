@@ -17,7 +17,7 @@ const UserFeatures = () => {
             className="features__card-image"
           />
           <div className="features__card-container">
-            <Link to={`user/${id}/workouts`}>
+            <Link to="workouts">
               <h4 className="features__card-title">Start workout</h4>
             </Link>
           </div>
