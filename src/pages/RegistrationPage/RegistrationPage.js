@@ -39,6 +39,14 @@ const RegistrationPage = () => {
             Email
           </label>
           <input type="email" id="email" className="registration__form-input" />
+          <label htmlFor="password" className="registration__form-label">
+            Password
+          </label>
+          <input
+            type="password"
+            id="password"
+            className="registration__form-input"
+          />
           <div className="registration__form-btns">
             <Link to="/login" className="registration__form-btn">
               Login

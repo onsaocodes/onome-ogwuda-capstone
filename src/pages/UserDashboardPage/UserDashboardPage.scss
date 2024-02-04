@@ -15,15 +15,12 @@
   }
 
   @include desktop {
-    padding-top: 6rem 8rem;
+    padding-top: 6rem 4rem;
   }
 
   &__title {
-    // display: flex;
-    // align-items: center;
-    // justify-items: center;
-    padding: 1rem 1rem;
-    font-size: 2rem;
+    padding: 1rem 13rem;
+    font-size: 4rem;
   }
 
   &__form {

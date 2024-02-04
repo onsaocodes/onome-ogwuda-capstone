@@ -1,26 +1,24 @@
 import "./UserFeatures.scss";
-import dumbbells from "../../assests/images/dumbbells.jpg";
-import food from "../../assests/images/food.jpg";
-import graph from "../../assests/images/graph.jpg";
-import { Link, useParams } from "react-router-dom";
+import dumbbells from "../../assets/images/dumbbells.jpg";
+import food from "../../assets/images/food.jpg";
+import graph from "../../assets/images/graph.jpg";
+import { Link } from "react-router-dom";
 
 const UserFeatures = () => {
-  let { id } = useParams();
-
   return (
     <div className="features">
       <div className="features__container">
         <div className="features__card">
-          <img
-            src={dumbbells}
-            alt="Rack of dumbbells"
-            className="features__card-image"
-          />
-          <div className="features__card-container">
-            <Link to="workouts">
+          <Link to="workouts" className="features__card-link">
+            <img
+              src={dumbbells}
+              alt="Rack of dumbbells"
+              className="features__card-image"
+            />
+            <div className="features__card-container">
               <h4 className="features__card-title">Start workout</h4>
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
         <div className="features__card">
           <img

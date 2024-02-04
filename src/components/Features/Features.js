@@ -1,7 +1,7 @@
 import "./Features.scss";
-import dumbbells from "../../assests/images/dumbbells.jpg";
-import food from "../../assests/images/food.jpg";
-import graph from "../../assests/images/graph.jpg";
+import dumbbells from "../../assets/images/dumbbells.jpg";
+import food from "../../assets/images/food.jpg";
+import graph from "../../assets/images/graph.jpg";
 
 const Features = () => {
   return (

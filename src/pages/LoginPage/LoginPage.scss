@@ -9,14 +9,6 @@
   align-content: center;
   gap: 1rem;
 
-  @include tablet {
-    // padding: 0 4rem;
-  }
-
-  @include desktop {
-    // padding-top: 6rem 8rem;
-  }
-
   &__title {
     display: flex;
     align-items: center;
@@ -49,6 +41,12 @@
     &-btn {
       text-decoration: none;
       color: black;
+
+      &--submit {
+        border: none;
+        background: none;
+        font-size: 1.6rem;
+      }
     }
     &-btn:hover {
       border-bottom: 2px solid purple;

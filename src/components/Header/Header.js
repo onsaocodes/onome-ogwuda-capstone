@@ -1,8 +1,16 @@
 import "./Header.scss";
-import { Link } from "react-router-dom";
-import logo from "../../assests/images/logo.svg";
+import { Link, useNavigate } from "react-router-dom";
+import logo from "../../assets/images/logo.svg";
 
-const Header = () => {
+const Header = ({ userLoggedIn, setUserLoggedIn }) => {
+  const navigate = useNavigate();
+
+  const handleLogOut = () => {
+    localStorage.clear();
+    setUserLoggedIn(false);
+    navigate("/");
+  };
+
   return (
     <header>
       <nav className="nav">
@@ -12,9 +20,15 @@ const Header = () => {
             <h2 className="nav__logo-text">habitrack</h2>
           </div>
         </Link>
-        <Link to="/login" className="nav__button">
-          Members Area
-        </Link>
+        {userLoggedIn ? (
+          <button className="nav__button" onClick={handleLogOut}>
+            Logout
+          </button>
+        ) : (
+          <Link to="/login" className="nav__button">
+            Members Area
+          </Link>
+        )}
       </nav>
     </header>
   );
