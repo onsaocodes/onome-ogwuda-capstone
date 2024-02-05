@@ -53,13 +53,23 @@ const LoginPage = ({ setUserLoggedIn }) => {
           <label htmlFor="password" className="login__form-label">
             Password
           </label>
-          <input type="password" id="password" className="login__form-input" />
+          <input
+            type="password"
+            id="password"
+            className="login__form-input"
+            defaultValue={user.password}
+          />
 
           <div className="login__form-remember">
             <label htmlFor="stay-logged-in" className="login__form-label">
               Remember me
             </label>
-            <input type="checkbox" name="stay-logged-in" id="stay-logged-in" />
+            <input
+              type="checkbox"
+              name="stay-logged-in"
+              id="stay-logged-in"
+              defaultChecked
+            />
           </div>
 
           <div className="login__form-btns">
