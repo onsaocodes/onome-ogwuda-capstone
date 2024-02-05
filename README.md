@@ -75,14 +75,14 @@ Meal tracker
 - / = home
 - /login = login page
 - /signup = signup page
-- /userid = dashboard
-- /userid/workouts = new workout page
-- /userid/workouts/compoundmovements = compound movement list
-- /userid/workouts/accessorymovements = accessory movement list
-- /userid/mealplans = new plan page
-- /userid/mealplans/afrocaribfood = Afro-Caribbean food
-- /userid/mealplans/westernfood = Western food
-- /userid/tracker = progress tracker
+- /user/id = dashboard
+- /user/id/workouts = new workout page
+- /user/id/workouts/compoundmovements = compound movement list
+- /user/id/workouts/accessorymovements = accessory movement list
+- /user/id/mealplans = new plan page
+- /user/id/mealplans/afrocaribfood = Afro-Caribbean food
+- /user/id/mealplans/westernfood = Western food
+- /user/id/tracker = progress tracker
 
 ### Auth
 
@@ -126,3 +126,10 @@ No authorisation as this will be based on a single user.
 - Challenges
 - Streaks
 - Community
+
+## Instructions
+
+- Clone both the front end and back end projects
+- Ensure MySQL is running
+- "npm i" in the terminal for both projects
+- "npm start" in the terminal for both projects
