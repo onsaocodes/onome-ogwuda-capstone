@@ -46,29 +46,29 @@ YouTube API for video demonstrations on how to complete exercises.
 ### Mockups
 
 Landing Page
-![](Landing.png)
+![](./src/assets/proposal/mockup/Landing.png)
 
 Login/Sign Up Page
-![](login.png)
+![](./src/assets/proposal/mockup/login.png)
 
 New user dashboard
-![](new-user.png)
+![](./src/assets/proposal/mockup/new-user.png)
 
 Existing user dashboard
-![](existing-user.png)
+![](./src/assets/proposal/mockup/existing-user.png)
 
 Progress tracker
-![](progress-tracker.png)
+![](./src/assets/proposal/mockup/progress-tracker.png)
 
 Create workout
-![](create-workout.png)
+![](./src/assets/proposal/mockup/create-workout.png)
 
 Meal tracker
-![](meal-tracker.png)
+![](./src/assets/proposal/mockup/meal-tracker.png)
 
 ### Data
 
-![](image.png)
+![](./src/assets/proposal/mockup/image.png)
 
 ### Endpoints
 
