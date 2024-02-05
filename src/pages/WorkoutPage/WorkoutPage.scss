@@ -4,6 +4,7 @@
 
 .workouts {
   padding: 0.5rem 2rem;
+  display: flex;
 
   @include tablet {
     padding: 0 4rem;
@@ -40,7 +41,8 @@
     padding-bottom: 1rem;
     gap: 1rem;
     &-name {
-      padding: 1rem 0;
+      padding-bottom: 0.5rem;
+      font-size: 1.5rem;
     }
     &-description {
       display: flex;

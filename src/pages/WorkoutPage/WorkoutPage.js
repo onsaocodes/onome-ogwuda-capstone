@@ -35,8 +35,9 @@ const WorkoutPage = () => {
 
   return (
     <div className="workouts">
-      <h3 className="workouts__header">Workouts</h3>
       <div className="workouts__next">
+        <h3 className="workouts__header">Workouts</h3>
+
         <h4 className="workouts__selected">Next workout: Leg Day</h4>
         <div className="workouts__upcoming">
           <div className="workouts__container">
