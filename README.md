@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+# Habitrack
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Habitrack is your one stop shop for accountability for all things health, fitness and lifestlye. The app educates you on how to structure a workout and allows you to plan your sessions around your life. It also gives you guidance on meal prep plans. The daily tracker helps you to check in on healthy habits such as reaching your step goals, drinking 8 glasses of water etc, with the option to add in your own daily non-negotiables.
 
-In the project directory, you can run:
+### Problem
 
-### `npm start`
+Most fitness apps require you to buy someone elses plan. This app however, combats that and allows you to be in the driving seat without the costs of a trainer. Additionally, being able to track your time, weights lifted, body fat loss etc. with visual representation, is much easier than tracking on your notes app or Excel spreadsheet.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### User Profile
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The app can be used by anyone who wants to lead a more organised life and have some control over health, fitness and lifestyle habits.
 
-### `npm test`
+They can use this on their phones or computers daily.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Considerations include: fitness goals and time available to train.
 
-### `npm run build`
+### Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- As a user, I want to be able to design my own workout in way recommended by science for results
+- As a user, I want to build my sessions according to the time I have available
+- As a user, I want to be able to track my progress over a given time period
+- As a user, I want to track my other habits over a period of time
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Implementation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Tech Stack
 
-### `npm run eject`
+- React
+- Express
+- MySQL
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### APIs
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+YouTube API for video demonstrations on how to complete exercises.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Sitemap
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Home page
+- Register
+- Login
+- Personal dashboard
+- Workout session
 
-## Learn More
+### Mockups
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Landing Page
+![](Landing.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Login/Sign Up Page
+![](login.png)
 
-### Code Splitting
+New user dashboard
+![](new-user.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Existing user dashboard
+![](existing-user.png)
 
-### Analyzing the Bundle Size
+Progress tracker
+![](progress-tracker.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Create workout
+![](create-workout.png)
 
-### Making a Progressive Web App
+Meal tracker
+![](meal-tracker.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Data
 
-### Advanced Configuration
+![](image.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Endpoints
 
-### Deployment
+- / = home
+- /login = login page
+- /signup = signup page
+- /userid = dashboard
+- /userid/workouts = new workout page
+- /userid/workouts/compoundmovements = compound movement list
+- /userid/workouts/accessorymovements = accessory movement list
+- /userid/mealplans = new plan page
+- /userid/mealplans/afrocaribfood = Afro-Caribbean food
+- /userid/mealplans/westernfood = Western food
+- /userid/tracker = progress tracker
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Auth
 
-### `npm run build` fails to minify
+No authorisation as this will be based on a single user.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Roadmap
+
+#### Wednesday 24th Jan
+
+- Set up project on Github
+- Create logo
+- Create landing page
+
+#### Thurs 25th Jan - Fri 26th Jan
+
+- Login/sign up page front end and back end
+
+#### Sat 27th Jan - Sun 28th Jan
+
+- New user dashboard front end and back end
+
+#### Mon 29th Jan - Tues 30th Jan
+
+- 'Create workout' page front end and back end
+
+#### Wed 31st Jan - Thurs 1st Feb
+
+- Start workout page
+
+#### Fri 2nd Jan - Sat 3rd Feb
+
+- Tracker page
+
+#### Sun 4th Feb
+
+- Fix bugs and submit
+
+## Nice-to-haves
+
+- Login functionality
+- Challenges
+- Streaks
+- Community
