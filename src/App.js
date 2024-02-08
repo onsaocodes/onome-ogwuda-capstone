@@ -7,6 +7,7 @@ import BiometricsPage from "./pages/BiometricsPage/BiometricsPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import UserDashboardPage from "./pages/UserDashboardPage/UserDashboardPage";
 import WorkoutPage from "./pages/WorkoutPage/WorkoutPage";
+import MealPage from "./pages/MealPage/MealPage";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
 
   useEffect(() => {
     if (storage) {
-      setUserLoggedIn(true);
+      setUserLoggedIn(false);
     }
   }, []);
   return (
@@ -33,6 +34,7 @@ function App() {
             />
             <Route path="/users/:id" element={<UserDashboardPage />} />
             <Route path="/users/:id/workouts" element={<WorkoutPage />} />
+            <Route path="/users/:id/meals" element={<MealPage />} />
           </Routes>
         </main>
       </BrowserRouter>

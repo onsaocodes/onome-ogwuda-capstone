@@ -33,6 +33,9 @@ const UserDashboardPage = () => {
       <div className="user">
         <div className="user__title-container">
           <h2 className="user__title">Welcome {user.first_name}</h2>
+          <p className="user__next-event">
+            There's 6 days until Valentine's Day. Stay on track!
+          </p>
         </div>
         <UserFeatures />
       </div>

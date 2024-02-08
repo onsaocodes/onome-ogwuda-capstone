@@ -21,14 +21,16 @@ const UserFeatures = () => {
           </Link>
         </div>
         <div className="features__card">
-          <img
-            src={food}
-            alt="Rack of dumbbells"
-            className="features__card-image"
-          />
-          <div className="features__card-container">
-            <h4 className="features__card-title">Track meals</h4>
-          </div>
+          <Link to="meals" className="features__card-link">
+            <img
+              src={food}
+              alt="Rack of dumbbells"
+              className="features__card-image"
+            />
+            <div className="features__card-container">
+              <h4 className="features__card-title">Track meals</h4>
+            </div>
+          </Link>
         </div>
         <div className="features__card">
           <img

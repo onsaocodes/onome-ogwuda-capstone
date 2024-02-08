@@ -37,7 +37,7 @@
 
   &__legday {
     display: flex;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
     gap: 1rem;
     &-name {
       padding-bottom: 0.5rem;
@@ -49,7 +49,8 @@
     }
     &-reps {
       border: 1px solid purple;
-      padding: 1rem;
+      padding: 0.3rem;
+      margin-bottom: 0.7rem;
     }
   }
 
@@ -62,8 +63,8 @@
     }
 
     &-input {
-      margin-top: 0.5rem;
-      padding: 0.1rem;
+      margin-top: 0.3rem;
+      margin-bottom: 0.3rem;
     }
   }
 }
