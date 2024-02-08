@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./WorkoutPage.scss";
 import { Link } from "react-router-dom";
+import SideNav from "../../components/SideNav/SideNav";
 
 const WorkoutPage = () => {
   const [workout, setWorkout] = useState(null);
@@ -544,6 +545,7 @@ const WorkoutPage = () => {
           <Link to={`/user/${id}`}>Complete Workout</Link>
         </div>
       </div>
+      <SideNav />
     </div>
   );
 };

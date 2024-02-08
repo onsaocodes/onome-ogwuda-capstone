@@ -5,13 +5,12 @@
 .workouts {
   padding: 0.5rem 2rem;
   display: flex;
-
   @include tablet {
     padding: 0 4rem;
   }
 
   @include desktop {
-    padding: 3rem 13rem;
+    padding: 3rem 15rem;
   }
 
   &__header {

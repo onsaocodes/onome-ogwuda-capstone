@@ -1,0 +1,70 @@
+@use "../../styles/reset";
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 2rem;
+
+  // @include tablet {
+  //   padding: 0 4rem;
+  // }
+
+  @include desktop {
+    padding: 3rem 7rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    padding: 2rem 0;
+  }
+
+  &__card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  &__image {
+    width: 100%;
+    opacity: 0.4;
+
+    &--current {
+      opacity: 1;
+    }
+  }
+
+  &__card {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 30%;
+    &--current {
+      border: 0.25rem solid purple;
+    }
+  }
+
+  &__card:hover {
+    box-shadow: 0 8px 16px 0 purple;
+  }
+
+  &__container {
+    padding: 1rem 1.5rem;
+  }
+
+  &__day {
+    font-size: 1.3rem;
+    padding-bottom: 0.2rem;
+  }
+
+  &__workout,
+  &__status {
+    font-weight: 200;
+    font-size: 1rem;
+    padding-bottom: 0.2rem;
+  }
+  &__status {
+    color: purple;
+  }
+}
